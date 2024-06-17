@@ -1,0 +1,22 @@
+@import "./nav";
+@import "./home";
+@import "./footer";
+@import "./counterButton";
+@import "./shopAll";
+@import "./product";
+@import "./about";
+@import "./variables";
+@import "./errorPage";
+@import "./signup";
+@import "./seasonal";
+@import "./searchResults";
+@import "./account";
+@import "./login";
+@import "./checkout";
+@import "./payment";
+
+.App{
+    overflow-x: clip;
+    width: 100%;
+    background-color: #ffffff;
+}

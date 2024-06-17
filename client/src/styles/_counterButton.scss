@@ -1,0 +1,44 @@
+@import "./variables";
+
+.counter-button-wrapper{
+    display: flex;
+    gap: 5px;
+    padding: 5px 9px;
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; 
+    }
+
+    button, input{
+        border: none;
+        color: $silver-950;
+        background-color: #ffffff;
+    }
+    button{
+        z-index: 1;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    input{
+        width: 30px;
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid $silver-300;
+        text-align: center;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+@media screen and (max-width: $media-mobile){
+    .counter-button-wrapper{
+        input{
+            width: 20px;
+        }
+    }
+}
