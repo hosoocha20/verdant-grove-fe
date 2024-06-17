@@ -211,8 +211,8 @@ const Shop = () => {
                 <Link to={`/shop/product/detail/${item.name.toLowerCase()}`} state={{productItem:item}} >
                 <div className="shop-product-item-container">
                   <div className="shop-product-item-img-wrapper">
-                    <img className= "shop-product-img-hover" loading="lazy" src={`${"/src/assets/" + item.imgMainSrc[1]}`}  alt={item.name} width="auto" height="auto"/>
-                    <img className= "shop-product-img-main" loading="lazy" src={`${"/src/assets/" + item.imgMainSrc[0]}`}  alt={item.name + " hover"} width="auto" height="auto"/>
+                    <img className= "shop-product-img-hover" loading="lazy" src={`${"src/assets/" + item.imgMainSrc[1]}`}  alt={item.name} width="auto" height="auto"/>
+                    <img className= "shop-product-img-main" loading="lazy" src={`${"src/assets/" + item.imgMainSrc[0]}`}  alt={item.name + " hover"} width="auto" height="auto"/>
                   </div>
                   <p className="shop-product-item-name">{item.name}</p>
                   <p>${Number(item.price).toFixed(2)}</p>
