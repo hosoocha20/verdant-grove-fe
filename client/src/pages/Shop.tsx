@@ -190,7 +190,7 @@ const Shop = () => {
             <div className="shop-options-btn-wrapper">
               <div className={`shop-options-btn-img-container ${shopOption === link.link ? "shop-options-btn-img-active": ''}`}>
                 <div className="shop-options-btn-img-wrapper">
-                  <img src={`${"/src/assets/" + link.imgSrc}`}  />
+                  <img src={`${"./assets/" + link.imgSrc}`}  />
                 </div>
               </div>
               <p>{link.title}</p>

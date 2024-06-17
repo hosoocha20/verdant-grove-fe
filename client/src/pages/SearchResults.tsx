@@ -105,8 +105,8 @@ const SearchResults = () => {
                 <Link to={`/shop/product/detail/${item.name.toLowerCase()}`} state={{productItem:item}}>
                 <div className="searchResults-product-item-container">
                     <div className="searchResults-product-item-img-wrapper">
-                    <img className= "searchResults-product-img-hover" loading="lazy" src={`${"/src/assets/" + item.imgMainSrc[1]}`}  alt={item.name} width="auto" height="auto"/>
-                    <img className= "searchResults-product-img-main" loading="lazy" src={`${"/src/assets/" + item.imgMainSrc[0]}`}  alt={item.name + " hover"} width="auto" height="auto"/>
+                    <img className= "searchResults-product-img-hover" loading="lazy" src={`${"./assets/" + item.imgMainSrc[1]}`}  alt={item.name} width="auto" height="auto"/>
+                    <img className= "searchResults-product-img-main" loading="lazy" src={`${"./assets/" + item.imgMainSrc[0]}`}  alt={item.name + " hover"} width="auto" height="auto"/>
                     </div>
                     <p className="searchResults-product-item-name">{item.name}</p>
                     <p>${item.price}</p>
