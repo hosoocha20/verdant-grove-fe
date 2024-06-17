@@ -136,6 +136,8 @@ const Layout = () => {
   /*Checkout*/
   const proceedToPay = (order: IOrderDetail) => {
     setUsers((prev) => prev.map((u) => (u.email === order.email ? {...u, orders: [...u.orders, order]} : u)))
+    //setShoppingCart((prev) => prev.filter((i) => order.products.map((p) => i.name === p.name)));
+    setShoppingCart((prev) => prev.filter((i) => !i.checked))
   }
 
   /*Account*/ 
