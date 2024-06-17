@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import {Outlet, RouterProvider, createBrowserRouter,createHashRouter, ScrollRestoration, useNavigate, useSearchParams} from 'react-router-dom'
-import App from './App.tsx'
+import {Outlet, RouterProvider,createHashRouter, ScrollRestoration, useNavigate, useSearchParams} from 'react-router-dom'
 import './index.css'
 import './styles/App.scss';
 import Navbar from './components/Navbar.tsx'
@@ -18,7 +17,7 @@ import Account from './pages/Account.tsx'
 import UserProfile from './components/UserProfile.tsx'
 import Orders from './components/Orders.tsx'
 import { ILoginUser, IUser } from './interfaces/IUser.ts'
-import { shopItemArrayAll } from './data/ShopData.ts'
+//import { shopItemArrayAll } from './data/ShopData.ts'
 import { IShoppingCartItem } from './interfaces/IShop.ts'
 import Login from './pages/Login.tsx'
 import Checkout from './pages/Checkout.tsx'
@@ -29,20 +28,20 @@ import { IOrderDetail } from './interfaces/IOrder.ts'
 
 const Layout = () => {
   const navigate = useNavigate();
-  const emptyOrderDetail = (): IOrderDetail => ({
-    orderNo: "",
-    firstName: "",
-    lastName: "",
-    email: "",
-    delivery: {address1: "", address2: "", city: "", zip:"", mobile: ""},
-    products: [],
-    subtotal: 0,
-    total: 0,
-    shipping: 10,
-    payment: "unpaid",
-    mobile: "",
-    date: new Date(),
-});
+//   const emptyOrderDetail = (): IOrderDetail => ({
+//     orderNo: "",
+//     firstName: "",
+//     lastName: "",
+//     email: "",
+//     delivery: {address1: "", address2: "", city: "", zip:"", mobile: ""},
+//     products: [],
+//     subtotal: 0,
+//     total: 0,
+//     shipping: 10,
+//     payment: "unpaid",
+//     mobile: "",
+//     date: new Date(),
+// });
   const [isSignedOn, setIsSignedOn] = useState(false);
   const [authedUser, setAuthedUser] = useState<IUser>({firstName: '', lastName: '', email: '', pw: '', cart: [], orders: [], address: {city: "", address1: "", address2: "", zip: ""} });
   const [authedEmail, setAuthedEmail] = useState('');

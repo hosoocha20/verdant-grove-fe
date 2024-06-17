@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { HiPlus, HiMinus } from "react-icons/hi";
 
 interface CounterButtonProps{

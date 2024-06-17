@@ -1,4 +1,4 @@
-import React, {SetStateAction, useEffect, useState} from "react";
+import React, { useEffect, useState} from "react";
 import { IUser } from "../interfaces/IUser";
 import { useOutletContext } from "react-router-dom";
 //setUser:  React.Dispatch<React.SetStateAction<IUser>>;

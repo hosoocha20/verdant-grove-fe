@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import { PiUserLight, PiHeart } from "react-icons/pi";
-import { TfiSearch, TfiClose } from "react-icons/tfi";
+import { PiUserLight } from "react-icons/pi";
+import { TfiSearch } from "react-icons/tfi";
 import { LiaShoppingBagSolid } from "react-icons/lia";
-import { IoIosArrowBack } from "react-icons/io";
+
 
 import { useDisableBodyScroll } from "../hooks/useDisableBodyScroll";
 import { useOutsideClick } from "../hooks/useOutsideClick";
 import { Link, useNavigate, createSearchParams } from "react-router-dom";
-import { IUser, ILoginUser } from "../interfaces/IUser";
+import { ILoginUser } from "../interfaces/IUser";
 import Sidebar from "./Sidebar";
 import { IShoppingCartItem } from "../interfaces/IShop";
 import ShoppingDrawer from "./ShoppingDrawer";
 import LoginDrawer from "./LoginDrawer";
-import SearchResults from "../pages/SearchResults";
+//import SearchResults from "../pages/SearchResults";
 
 interface NavbarProps {
   isSignedOn: boolean;
