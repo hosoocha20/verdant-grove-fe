@@ -18,4 +18,5 @@ The Verdant Grove is an e-commerce website selling fruits built to showcase a us
 - Responsive design for all devices
 
 ### Notes:
-- This is fully frontend and also does not use localStorage to store data, thus on page refresh, website will be resetted. 
+- This is fully frontend and also does not use localStorage to store data, thus on page refresh, website will be resetted.
+- There is no strict authentication for logging in, and thus the routes are not protected - this is something I will integrate while I build the backend
