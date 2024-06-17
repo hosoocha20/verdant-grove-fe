@@ -60,7 +60,7 @@ function App() {
   
   return (
     <div className="App">
-      <Navbar />
+      
       {openPage === "Home" && (
         <>
           <Home />

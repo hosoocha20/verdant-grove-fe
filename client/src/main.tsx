@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import {Outlet, RouterProvider, createBrowserRouter, ScrollRestoration, useNavigate, useSearchParams} from 'react-router-dom'
+import {Outlet, RouterProvider, createBrowserRouter,createHashRouter, ScrollRestoration, useNavigate, useSearchParams} from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
 import './styles/App.scss';
@@ -157,7 +157,7 @@ const Layout = () => {
   )
 }
 
-const router = createBrowserRouter([{
+const router = createHashRouter([{
   path: '/',
   element: <Layout />,
   errorElement: <ErrorPage />,
