@@ -2,7 +2,11 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  base: `/verdant-grove-fe/`,
-})
+export default defineConfig(() => {
+  const config = {
+    base: `/verdant-grove-fe/`,
+    plugins: [react()],
+  };
+
+  return config;
+});

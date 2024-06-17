@@ -165,7 +165,7 @@ const router = createHashRouter([{
       errorElement: <ErrorPage />,
       children: [
         {
-          path: '/',
+          index: true,
           element: <Home />
         },
         {

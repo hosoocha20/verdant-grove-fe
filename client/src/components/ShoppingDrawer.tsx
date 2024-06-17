@@ -184,7 +184,7 @@ const ShoppingDrawer = (props: ShoppingDrawerProps) => {
                     onChange={() => handleCheckedItemOnChange(item)}
                   />
                   <img
-                    src={`${"/src/assets/" + item.imgSrc[0]}`}
+                    src={`${"src/assets/" + item.imgSrc[0]}`}
                     id="shopping-item-img"
                   />
                   <div className="shopping-drawer-item-info">
