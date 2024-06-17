@@ -113,7 +113,7 @@ const Seasonal = () => {
         {shopItemArray.map((item: ShopItem) =>
             (
                 <Grid item xs={12} sm={6} md={4}>
-                <img className= "seasonal-gallery-img" loading="lazy" src={`${"src/assets/" + item.imgMainSrc}`}  alt={item.name} width="auto" height="auto"/>
+                <img className= "seasonal-gallery-img" loading="lazy" src={`${"/src/assets/" + item.imgMainSrc}`}  alt={item.name} width="auto" height="auto"/>
                 </Grid>
             )
         )}
